@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "hotbargrid",
+  "version": "1.0.0",
+  "name": "Hotbar Grid",
+  "description": "3x3 hotbar",
+  "authors": ["BattryLeaf"],
+  "environment": "client",
+  "accessWidener": "hotbargrid.accesswidener",
+  "entrypoints": {
+    "main": [
+      "com.example.hotbargrid.HotbarGridMod"
+    ],
+    "client": [
+      "com.example.hotbargrid.HotbarGridClient"
+    ]
+  },
+  "mixins": [
+    "hotbargrid.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.21.x",
+    "fabric-api": "*"
+  }
+}
